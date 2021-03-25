@@ -14,7 +14,7 @@ public class FirstNonRepeatedCharactersInGivenString {
 				map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
 			}
 		}
-		System.out.println("First non repeated Character -"+
+		System.out.println("First non repeated Character is "+
 		map.entrySet().stream().filter(i -> i.getValue() == 1).findFirst().get().getKey());
 	}
 }
