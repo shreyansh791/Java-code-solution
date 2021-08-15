@@ -12,7 +12,8 @@ import java.util.stream.Collectors;
 
 public class DuplicateElementsUsingStream {
 	public static void main(String[] args) {
-		String skills[] = { "k8s", "k8s", "java", "docker", "java", "maven", "testng", "docker" };
+
+		String skills[] = { "k8s", "k8s", "java", "docker", "java", "maven", "testng", "docker","selenium" };
 		System.out.println("******************** Using Streams filter and Frequency **************************");
 		List<String> skillList = Arrays.asList(skills);
 		Set<String> collect = skillList.stream().filter(i -> Collections.frequency(skillList, i) > 1)
